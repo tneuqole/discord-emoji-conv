@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 var nums = [
-  ':zero:',
-  ':one:',
-  ':two:',
-  ':three:',
-  ':four:',
-  ':five:',
-  ':six:',
-  ':seven:',
-  ':eight:',
-  ':nine:'
+  ':zero: ',
+  ':one: ',
+  ':two: ',
+  ':three: ',
+  ':four: ',
+  ':five: ',
+  ':six: ',
+  ':seven: ',
+  ':eight: ',
+  ':nine: '
 ];
 
 var textToEmoji = (text) => {
