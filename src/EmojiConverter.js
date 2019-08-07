@@ -39,17 +39,25 @@ export default class EmojiConverter extends React.Component {
     return (
       <div>
         <div class="container">
-          <div class="row col-8 justify-content-center py-1">
+          <div class="row justify-content-center py-1">
+            <div class="col col-8 text-center">
               <p class="h3">Enter Text to Convert</p>
+            </div>
           </div>
-          <div class="row col-8 justify-content-center py-1">
+          <div class="row justify-content-center py-1">
+            <div class="col col-8">
               <input type="text" class="form-control form-control-lg" value={this.state.text} onChange={this.handleChange}/>
+            </div>
           </div>
-          <div class="row col-8 justify-content-center py-1">
-            <button type="button" class="btn btn-primary btn-lg btn-block" value="Convert" onClick={this.handleSubmit}>Convert</button>
+          <div class="row justify-content-center py-1">
+            <div class="col col-8">
+              <button type="button" class="btn btn-primary btn-lg btn-block" value="Convert" onClick={this.handleSubmit}>Convert</button>
+            </div>
           </div>
-          <div class="row col-8 justify-content-center py-1">
-            <textarea class="form-control form-control-lg bg-white" style={{"font-size": "14px"}} rows="5" value={this.state.emojiText} readOnly/>
+          <div class="row justify-content-center py-1">
+            <div class="col col-8">
+              <textarea class="form-control form-control-lg bg-white" style={{"font-size": "14px"}} rows="5" value={this.state.emojiText} readOnly/>
+            </div>
           </div>
         </div>
       </div>
