@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+var nums = [
+  ':zero:',
+  ':one:',
+  ':two:',
+  ':three:',
+  ':four:',
+  ':five:',
+  ':six:',
+  ':seven:',
+  ':eight:',
+  ':nine:'
+];
+
 var textToEmoji = (text) => {
-  let re = RegExp('[a-zA-Z]');
+  let char_re = RegExp('[a-zA-Z]');
+  let num_re = RegExp('[0-9]');
   let emojiText = '';
   for (const c of text) {
-    if (re.exec(c)) {
+    if (char_re.exec(c)) {
       emojiText += `:regional_indicator_${ c.toLowerCase() }: `;
+    } else if (num_re.exec(c)) {
+      emojiText += nums[parseInt(c)];
     } else if (c === ' ') {
       emojiText += '  ';
     }
